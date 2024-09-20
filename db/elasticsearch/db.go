@@ -6,18 +6,19 @@ import (
 	"crypto/tls"
 	"encoding/json"
 	"fmt"
-	"github.com/cenkalti/backoff/v4"
-	"github.com/elastic/go-elasticsearch/v8"
-	"github.com/elastic/go-elasticsearch/v8/esapi"
-	"github.com/elastic/go-elasticsearch/v8/esutil"
-	"github.com/magiconair/properties"
-	"github.com/pingcap/go-ycsb/pkg/prop"
-	"github.com/pingcap/go-ycsb/pkg/ycsb"
 	"net"
 	"net/http"
 	"runtime"
 	"strings"
 	"time"
+
+	"github.com/cenkalti/backoff/v4"
+	"github.com/elastic/go-elasticsearch/v8"
+	"github.com/elastic/go-elasticsearch/v8/esapi"
+	"github.com/elastic/go-elasticsearch/v8/esutil"
+	"github.com/magiconair/properties"
+	"github.com/minlno/go-ycsb/pkg/prop"
+	"github.com/minlno/go-ycsb/pkg/ycsb"
 )
 
 const (

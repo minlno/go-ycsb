@@ -6,8 +6,8 @@ import (
 	"fmt"
 
 	"github.com/magiconair/properties"
-	"github.com/pingcap/go-ycsb/pkg/prop"
-	"github.com/pingcap/go-ycsb/pkg/ycsb"
+	"github.com/minlno/go-ycsb/pkg/prop"
+	"github.com/minlno/go-ycsb/pkg/ycsb"
 
 	gomemcache "github.com/bradfitz/gomemcache/memcache"
 )
@@ -34,6 +34,7 @@ func (mc *memcached) Read(ctx context.Context, table string, key string, fields 
 	it, err2 := mc.client.Get(getKeyName(table, key))
 	err = err2
 	if err != nil {
+		fmt.Printf("%s\n", err)
 		return
 	}
 	err = json.Unmarshal(it.Value, &data)
@@ -93,9 +94,13 @@ func getKeyName(table string, key string) string {
 func (mc *memcached) Insert(ctx context.Context, table string, key string, values map[string][]byte) (err error) {
 	data, err := json.Marshal(values)
 	if err != nil {
+		fmt.Printf("insert json error\n")
 		return err
 	}
 	err = mc.client.Set(&gomemcache.Item{Key: getKeyName(table, key), Value: []byte(string(data))})
+	if err != nil {
+		fmt.Printf("%s\n", err)
+	}
 	return
 }
 
@@ -117,6 +122,7 @@ func (mc memcachedCreator) Create(p *properties.Properties) (ycsb.DB, error) {
 	mclient := gomemcache.New(addr)
 
 	memcached.client = mclient
+	memcached.client.MaxIdleConns = 1000000
 	memcached.fieldcount = p.GetInt64(prop.FieldCount, prop.FieldCountDefault)
 
 	return memcached, nil

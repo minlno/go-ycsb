@@ -21,9 +21,9 @@ import (
 	"os"
 
 	"github.com/magiconair/properties"
-	"github.com/pingcap/go-ycsb/pkg/prop"
-	"github.com/pingcap/go-ycsb/pkg/util"
-	"github.com/pingcap/go-ycsb/pkg/ycsb"
+	"github.com/minlno/go-ycsb/pkg/prop"
+	"github.com/minlno/go-ycsb/pkg/util"
+	"github.com/minlno/go-ycsb/pkg/ycsb"
 	"github.com/tecbot/gorocksdb"
 )
 

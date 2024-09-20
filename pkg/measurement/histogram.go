@@ -18,7 +18,7 @@ import (
 	"time"
 
 	hdrhistogram "github.com/HdrHistogram/hdrhistogram-go"
-	"github.com/pingcap/go-ycsb/pkg/util"
+	"github.com/minlno/go-ycsb/pkg/util"
 )
 
 type histogram struct {

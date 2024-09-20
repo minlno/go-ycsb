@@ -19,9 +19,9 @@ import (
 	"strings"
 
 	"github.com/magiconair/properties"
+	"github.com/minlno/go-ycsb/pkg/util"
+	"github.com/minlno/go-ycsb/pkg/ycsb"
 	"github.com/pingcap/errors"
-	"github.com/pingcap/go-ycsb/pkg/util"
-	"github.com/pingcap/go-ycsb/pkg/ycsb"
 	"github.com/pingcap/kvproto/pkg/kvrpcpb"
 	"github.com/tikv/client-go/v2/rawkv"
 )

@@ -21,9 +21,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/pingcap/go-ycsb/pkg/client"
-	"github.com/pingcap/go-ycsb/pkg/measurement"
-	"github.com/pingcap/go-ycsb/pkg/prop"
+	"github.com/minlno/go-ycsb/pkg/client"
+	"github.com/minlno/go-ycsb/pkg/measurement"
+	"github.com/minlno/go-ycsb/pkg/prop"
 	"github.com/spf13/cobra"
 )
 
