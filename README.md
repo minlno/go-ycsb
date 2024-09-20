@@ -336,7 +336,10 @@ Common configurations:
 |dynamodb.consistent.reads|false|Reads on DynamoDB provide an eventually consistent read by default. If your benchmark/use-case requires a strongly consistent read, set this option to true|
 |dynamodb.delete.after.run.stage|false|Detele the database table after the run stage|
 
-
+### Memcached
+|field|default value|description|
+|-|-|-|
+|memcached.addr|"localhost:11211"|Memcached server address in "host:port" form|
 
 ## TODO
 

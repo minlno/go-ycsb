@@ -1,7 +1,7 @@
 module github.com/pingcap/go-ycsb
 
 require (
-	cloud.google.com/go/spanner v1.45.0
+	cloud.google.com/go/spanner v1.19.0
 	github.com/HdrHistogram/hdrhistogram-go v1.1.2
 	github.com/XiaoMi/pegasus-go-client v0.0.0-20181029071519-9400942c5d1c
 	github.com/aerospike/aerospike-client-go v1.35.2
@@ -30,8 +30,7 @@ require (
 	github.com/tecbot/gorocksdb v0.0.0-20191217155057-f0fad39f321c
 	github.com/tikv/client-go/v2 v2.0.1-0.20220720064224-aa9ded37d17d
 	go.mongodb.org/mongo-driver v1.11.3
-	google.golang.org/api v0.114.0
-	google.golang.org/genproto v0.0.0-20230410155749-daa745c078e1
+	google.golang.org/api v0.47.0
 )
 
 require (
@@ -45,11 +44,8 @@ require (
 )
 
 require (
-	cloud.google.com/go v0.110.0 // indirect
-	cloud.google.com/go/compute v1.19.1 // indirect
-	cloud.google.com/go/compute/metadata v0.2.3 // indirect
-	cloud.google.com/go/iam v0.13.0 // indirect
-	cloud.google.com/go/longrunning v0.4.1 // indirect
+	cloud.google.com/go v0.82.0 // indirect
+	cloud.google.com/go/compute/metadata v0.2.0 // indirect
 	github.com/AndreasBriese/bbloom v0.0.0-20180913140656-343706a395b7 // indirect
 	github.com/apache/thrift v0.0.0-00010101000000-000000000000 // indirect
 	github.com/aws/aws-sdk-go-v2/credentials v1.12.21 // indirect
@@ -69,6 +65,7 @@ require (
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/bitly/go-hostpool v0.0.0-20171023180738-a3a6125de932 // indirect
 	github.com/bmizerany/assert v0.0.0-20160611221934-b7ed37b82869 // indirect
+	github.com/bradfitz/gomemcache v0.0.0-20230905024940-24af94b03874 // indirect
 	github.com/census-instrumentation/opencensus-proto v0.4.1 // indirect
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect
 	github.com/chzyer/test v1.0.0 // indirect
@@ -80,7 +77,7 @@ require (
 	github.com/dgryski/go-farm v0.0.0-20190423205320-6a90982ecee2 // indirect
 	github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f // indirect
 	github.com/elastic/elastic-transport-go/v8 v8.0.0-20211216131617-bbee439d559c // indirect
-	github.com/envoyproxy/go-control-plane v0.11.1-0.20230524094728-9239064ad72f // indirect
+	github.com/envoyproxy/go-control-plane v0.10.3 // indirect
 	github.com/envoyproxy/protoc-gen-validate v0.10.1 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
@@ -90,7 +87,7 @@ require (
 	github.com/google/go-cmp v0.5.9 // indirect
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/googleapis/enterprise-certificate-proxy v0.2.3 // indirect
-	github.com/googleapis/gax-go/v2 v2.7.1 // indirect
+	github.com/googleapis/gax-go/v2 v2.0.5 // indirect
 	github.com/grpc-ecosystem/go-grpc-middleware v1.1.0 // indirect
 	github.com/hailocab/go-hostpool v0.0.0-20160125115350-e80d13ce29ed // indirect
 	github.com/inconshreveable/mousetrap v1.0.0 // indirect
@@ -133,7 +130,7 @@ require (
 	golang.org/x/text v0.13.0 // indirect
 	golang.org/x/xerrors v0.0.0-20220907171357-04be3eba64a2 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
-	google.golang.org/grpc v1.56.3 // indirect
+	google.golang.org/grpc v1.52.0-dev // indirect
 	google.golang.org/protobuf v1.30.0 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/ini.v1 v1.42.0 // indirect

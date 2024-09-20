@@ -31,51 +31,53 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/pingcap/go-ycsb/pkg/client"
-	"github.com/pingcap/go-ycsb/pkg/measurement"
-	"github.com/pingcap/go-ycsb/pkg/prop"
-	"github.com/pingcap/go-ycsb/pkg/util"
-	_ "github.com/pingcap/go-ycsb/pkg/workload"
-	"github.com/pingcap/go-ycsb/pkg/ycsb"
+	"github.com/minlno/go-ycsb/pkg/client"
+	"github.com/minlno/go-ycsb/pkg/measurement"
+	"github.com/minlno/go-ycsb/pkg/prop"
+	"github.com/minlno/go-ycsb/pkg/util"
+	_ "github.com/minlno/go-ycsb/pkg/workload"
+	"github.com/minlno/go-ycsb/pkg/ycsb"
 
 	// Register basic database
-	_ "github.com/pingcap/go-ycsb/db/basic"
+	_ "github.com/minlno/go-ycsb/db/basic"
 	// Register MySQL database
-	_ "github.com/pingcap/go-ycsb/db/mysql"
+	_ "github.com/minlno/go-ycsb/db/mysql"
 	// Register TiKV database
-	_ "github.com/pingcap/go-ycsb/db/tikv"
+	_ "github.com/minlno/go-ycsb/db/tikv"
 	// Register PostgreSQL database
-	_ "github.com/pingcap/go-ycsb/db/pg"
+	_ "github.com/minlno/go-ycsb/db/pg"
 	// Register Aerospike database
-	_ "github.com/pingcap/go-ycsb/db/aerospike"
+	_ "github.com/minlno/go-ycsb/db/aerospike"
 	// Register Badger database
-	_ "github.com/pingcap/go-ycsb/db/badger"
+	_ "github.com/minlno/go-ycsb/db/badger"
 	// Register FoundationDB database
-	_ "github.com/pingcap/go-ycsb/db/foundationdb"
+	_ "github.com/minlno/go-ycsb/db/foundationdb"
 	// Register RocksDB database
-	_ "github.com/pingcap/go-ycsb/db/rocksdb"
+	_ "github.com/minlno/go-ycsb/db/rocksdb"
 	// Register Spanner database
-	_ "github.com/pingcap/go-ycsb/db/spanner"
+	_ "github.com/minlno/go-ycsb/db/spanner"
 	// Register pegasus database
-	_ "github.com/pingcap/go-ycsb/db/pegasus"
+	_ "github.com/minlno/go-ycsb/db/pegasus"
 	// Register sqlite database
-	_ "github.com/pingcap/go-ycsb/db/sqlite"
+	_ "github.com/minlno/go-ycsb/db/sqlite"
 	// Register cassandra database
-	_ "github.com/pingcap/go-ycsb/db/cassandra"
+	_ "github.com/minlno/go-ycsb/db/cassandra"
 	// Register mongodb database
-	_ "github.com/pingcap/go-ycsb/db/mongodb"
+	_ "github.com/minlno/go-ycsb/db/mongodb"
 	// Register redis database
-	_ "github.com/pingcap/go-ycsb/db/redis"
+	_ "github.com/minlno/go-ycsb/db/redis"
 	// Register boltdb database
-	_ "github.com/pingcap/go-ycsb/db/boltdb"
+	_ "github.com/minlno/go-ycsb/db/boltdb"
 	// Register minio
-	_ "github.com/pingcap/go-ycsb/db/minio"
+	_ "github.com/minlno/go-ycsb/db/minio"
 	// Register elastic
-	_ "github.com/pingcap/go-ycsb/db/elasticsearch"
+	_ "github.com/minlno/go-ycsb/db/elasticsearch"
 	// Register etcd
-	_ "github.com/pingcap/go-ycsb/db/etcd"
+	_ "github.com/minlno/go-ycsb/db/etcd"
 	// Register dynamodb
-	_ "github.com/pingcap/go-ycsb/db/dynamodb"
+	_ "github.com/minlno/go-ycsb/db/dynamodb"
+	// Register memcached
+	_ "github.com/minlno/go-ycsb/db/memcached"
 )
 
 var (
